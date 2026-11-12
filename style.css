@@ -521,3 +521,29 @@ navLinks.forEach(function(link) {
     });
 
 });
+
+
+/* Project Buttons */
+.project-btn,
+.coming-soon {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-btn {
+    background-color: #64e8d1;
+    color: #101827;
+}
+
+.project-btn:hover {
+    background-color: white;
+}
+
+.coming-soon {
+    background-color: #334155;
+    color: #cbd5e1;
+}
