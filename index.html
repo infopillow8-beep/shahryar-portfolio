@@ -1,79 +1,83 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Shahryar Portfolio</title>
-    <meta name="description" content="Shahryar's personal portfolio showcasing web development skills and projects.">
+
+    <meta name="description"
+          content="Shahryar's personal portfolio showcasing web development skills and projects.">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
-   
-<header>
-    <h2 class="logo">Shahryar.</h2>
+    <header>
+        <h2 class="logo">Shahryar.</h2>
 
-    <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="navMenu"
-    >
-        ☰
-    </button>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+        >
+            ☰
+        </button>
 
-    <nav id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
 
     <!-- Home Section -->
-   
-<!-- Home Section -->
-<section class="hero" id="home">
+    <section class="hero" id="home">
 
-    <div class="hero-text">
+        <div class="hero-text">
 
-        <p class="hello">Hello, I'm</p>
+            <p class="hello">Hello, I'm</p>
 
-        <h1>Shahryar</h1>
+            <h1>Shahryar</h1>
 
-        <h2>Web Developer</h2>
+            <h2>Web Developer</h2>
 
-        <p class="description">
-            I am learning to build modern
-            and beautiful websites using
-            HTML, CSS and JavaScript.
-        </p>
+            <p class="description">
+                I am learning to build modern
+                and beautiful websites using
+                HTML, CSS and JavaScript.
+            </p>
 
-        <a href="#about" class="btn">
-            About Me
-        </a>
+            <a href="#about" class="btn">
+                About Me
+            </a>
 
-    </div>
+        </div>
 
-    <div class="hero-image">
+        <div class="hero-image">
+            <img
+                src="profile.png.jpeg"
+                alt="Shahryar Profile Photo"
+            >
+        </div>
 
-       
+    </section>
 
-<img src="profile.png.jpeg" alt="Shahryar Profile Photo">
-
-
-    </div>
-
-</section>
 
     <!-- About Section -->
     <section class="about" id="about">
+
         <h2>About Me</h2>
 
         <p>
@@ -86,107 +90,126 @@
             professional web developer
             and build amazing websites.
         </p>
+
     </section>
+
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
+
         <h2>My Skills</h2>
 
         <div class="skills-container">
+
             <div class="skill-box">HTML</div>
             <div class="skill-box">CSS</div>
             <div class="skill-box">JavaScript</div>
+
         </div>
+
     </section>
+
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
+
         <h2>My Projects</h2>
 
-       
-<div class="project-container">
+        <div class="project-container">
 
-    <!-- Project 1 -->
-    <div class="project-card">
+            <!-- Project 1 -->
+            <div class="project-card">
 
-        <img
-            src="images/project1.jpg"
-            alt="Portfolio Website Screenshot"
-        >
+                <h3>Portfolio Website</h3>
 
-        <h3>Portfolio Website</h3>
+                <p>
+                    My first personal portfolio
+                    website built using HTML,
+                    CSS and JavaScript.
+                </p>
 
-        <p>
-            My first personal portfolio website
-            built using HTML, CSS and JavaScript.
-        </p>
+                <a
+                    href="https://infopillow8-beep.github.io/shahryar-portfolio/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-btn"
+                >
+                    View Project
+                </a>
 
-    </div>
+            </div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
 
-        <img
-            src="images/project2.jpg"
-            alt="Practice Project Screenshot"
-        >
+            <!-- Project 2 -->
+            <div class="project-card">
 
-        <h3>Practice Project</h3>
+                <h3>Practice Project</h3>
 
-        <p>
-            A project where I practice
-            my web development skills.
-        </p>
+                <p>
+                    I will create more exciting
+                    web development projects soon.
+                </p>
 
-    </div>
+                <span class="coming-soon">
+                    Coming Soon
+                </span>
 
-</div>
+            </div>
+
+        </div>
 
     </section>
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
 
-    <h2>Contact Me</h2>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
 
-    <p>Have a question? Send me a message!</p>
+        <h2>Contact Me</h2>
 
-    <form id="contactForm">
+        <p>Have a question? Send me a message!</p>
 
-        <input
-            type="text"
-            id="name"
-            placeholder="Your Name"
-            required
-        >
+        <form id="contactForm">
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Your Email"
-            required
-        >
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
 
-        <textarea
-            id="message"
-            placeholder="Your Message"
-            rows="5"
-            required
-        ></textarea>
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
 
-        <button type="submit">Send Message</button>
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
 
-    </form>
+            <button type="submit">
+                Send Message
+            </button>
 
-    <p id="formStatus" role="status"></p>
+        </form>
 
-</section>
+        <p id="formStatus" role="status"></p>
+
+    </section>
+
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Shahryar</p>
+        <p>© 2026 Shahryar. All Rights Reserved.</p>
     </footer>
-<script src="script.js"></script>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
