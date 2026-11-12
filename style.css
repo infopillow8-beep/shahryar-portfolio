@@ -1,0 +1,523 @@
+
+/* Website ki basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Poori website ka design */
+body {
+    background-color: #101827;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header design */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+}
+
+/* Logo ka color */
+.logo {
+    color: #64e8d1;
+    font-size: 28px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+/* Links par mouse le jane se */
+nav a:hover {
+    color: #64e8d1;
+}
+
+/* Main section */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 10%;
+}
+
+/* Hello text */
+.hello {
+    color: #64e8d1;
+    font-size: 20px;
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+/* Developer heading */
+.hero h2 {
+    font-size: 32px;
+    color: #64e8d1;
+    margin-top: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 17px;
+    color: #b4c2d3;
+    max-width: 500px;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+/* Button */
+button {
+    background-color: #64e8d1;
+    color: #101827;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+/* Button par mouse le jane se */
+button:hover {
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #b4c2d3;
+    border-top: 1px solid #354155;
+}
+
+/* Mobile screen ka design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Common Section Design */
+.about,
+.skills,
+.projects {
+    padding: 80px 10%;
+    scroll-margin-top: 20px;
+}
+
+/* Section Headings */
+.about h2,
+.skills h2,
+.projects h2 {
+    font-size: 34px;
+    color: #64e8d1;
+    margin-bottom: 25px;
+}
+
+/* About Me */
+.about {
+    background-color: #162133;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #b4c2d3;
+    max-width: 750px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    <div class="skill-box">Web Design</div>
+}
+
+.skill-box {
+    background-color: #1e293b;
+    padding: 25px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    background-color: #64e8d1;
+    color: #101827;
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.projects {
+    background-color: #162133;
+}
+
+.project-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    transition: 0.3s;
+}
+
+.project-card h3 {
+    color: #64e8d1;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #b4c2d3;
+    line-height: 1.7;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+/* About Me Button */
+.btn {
+    display: inline-block;
+    background-color: #64e8d1;
+    color: #101827;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 25px 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .about,
+    .skills,
+    .projects {
+        padding: 60px 5%;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+
+    .project-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 34px;
+    color: #64e8d1;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #b4c2d3;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e293b;
+    border: 1px solid #354155;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #64e8d1;
+}
+
+.contact button {
+    margin-top: 0;
+}
+
+#formStatus {
+    margin-top: 20px;
+}
+
+/* Hero Layout */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Hero Text */
+.hero-text {
+    flex: 1;
+}
+
+/* Hero Image Container */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile Photo */
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #64e8d1;
+    box-shadow: 0 0 30px rgba(100, 232, 209, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .description {
+        text-align: center;
+    }
+}
+
+/* Project Images */
+.project-card {
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Project Card Hover */
+.project-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Menu Button */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;
+        padding: 12px;
+        background-color: #1e293b;
+        border-radius: 6px;
+    }
+}
+
+/* Animation for Home Text */
+.hero-text {
+    animation: fadeUp 1s ease;
+}
+
+/* Animation Definition */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile Photo Animation */
+.hero-image img {
+    animation: photoAppear 1.2s ease;
+}
+
+@keyframes photoAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .hero-text,
+    .hero-image img {
+        animation: none;
+    }
+}
+
+// Mobile Navigation Menu
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", function() {
+
+    navMenu.classList.toggle("active");
+
+    const isOpen = navMenu.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+
+});
+
+// Close menu when a link is clicked
+const navLinks = document.querySelectorAll("#navMenu a");
+
+navLinks.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navMenu.classList.remove("active");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
+
+    });
+
+});
